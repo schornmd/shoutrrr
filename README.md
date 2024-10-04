@@ -1,5 +1,5 @@
 # Shoutrrr
-custom [shoutrrr](https://containrrr.dev/shoutrrr/v0.8/) docker image with cron integration
+custom [Shoutrrr](https://containrrr.dev/shoutrrr/v0.8/) docker image with cron integration
 
 > [!WARNING]
 > This image does not work well with WSL or Windows!
