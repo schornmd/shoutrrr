@@ -1,7 +1,8 @@
 services:
-  golang:
+  shoutrrr:
     image: schornmd/shoutrrr
     environment:
       - TZ=Europe/Berlin
     volumes:
       - ./cron:/etc/cron.d
+      - ./logs:/var/log
