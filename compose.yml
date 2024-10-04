@@ -4,5 +4,6 @@ services:
     environment:
       - TZ=Europe/Berlin
     volumes:
-      - ./cron:/etc/cron.d
-      - ./logs:/var/log
+      - ./cron:/etc/cron.d # Cronjobs
+      - ./logs:/var/log    # Logging
+      - ./opt:/opt         # Scripts
