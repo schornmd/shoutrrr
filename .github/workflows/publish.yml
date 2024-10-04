@@ -28,4 +28,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: schornmd/shoutrrr:${{ steps.tag.outputs.VERSION }}
+          tags: |
+            schornmd/shoutrrr:${{ steps.tag.outputs.VERSION }}
+            schornmd/shoutrrr:latest
