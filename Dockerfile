@@ -1,6 +1,6 @@
 FROM golang:1.23.2
 
-RUN apt update && apt install -y rsyslog cron inotify-tools
+RUN apt update && apt install -y rsyslog cron inotify-tools sqlite3
 RUN mkdir -p /etc/cron.d
 RUN sed -i.bak '/load="imklog"/d' /etc/rsyslog.conf
 
