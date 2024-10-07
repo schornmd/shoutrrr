@@ -7,6 +7,10 @@ rsyslogd
 
 inotifywait -m /etc/cron.d -e create,modify,delete |
 while read DIRECTORY ACTION NAME; do
+  if [[ "$NAME" =~ (~|\.swp|\.tmp)$ ]]; then
+    continue
+  fi
+  
   FILE=$DIRECTORY$NAME
 
   chmod 644 $FILE

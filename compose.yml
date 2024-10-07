@@ -6,4 +6,4 @@ services:
     volumes:
       - ./cron:/etc/cron.d # Cronjobs
       - ./logs:/var/log    # Logging
-      - ./opt:/opt         # Scripts
+      - ./scripts:/opt     # Scripts
